@@ -76,6 +76,75 @@ The **Supermarket Billing System** is a Java-based application that helps manage
 - Verify **JDBC MySQL driver** is installed and added to the project classpath.
 - If `java.sql.SQLException` occurs, check **database credentials** in the code.
 
-## Author
-- **Yashwanth Raj**
+# Stock Analysis Bot
 
+## Overview
+The **Stock Analysis Bot** is a Streamlit-based chatbot that provides real-time stock market analysis using **Yahoo Finance API** and **Google Gemini AI**. It can fetch stock prices, compute technical indicators, and visualize stock trends.
+
+## Features
+- **Fetch Live Stock Prices** (Indian and global stocks)
+- **Compute Technical Indicators**
+  - Simple Moving Average (SMA)
+  - Exponential Moving Average (EMA)
+  - Relative Strength Index (RSI)
+  - Moving Average Convergence Divergence (MACD)
+- **Stock Price Visualization**
+- **AI-Powered Chatbot Integration**
+
+## Technologies Used
+- **Python** (3.x)
+- **Streamlit** (Web UI)
+- **Yahoo Finance API (`yfinance`)** (Stock data)
+- **Google Generative AI (`google.generativeai`)**
+- **Matplotlib** (Data visualization)
+- **Joblib & dotenv** (Environment management)
+
+## Installation
+### Prerequisites
+- Python 3.x installed
+- A Google Gemini API key
+- Required Python dependencies installed
+
+### Setup
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/yourusername/stock-analysis-bot.git
+   cd stock-analysis-bot
+   ```
+2. **Create a Virtual Environment** (Optional but recommended)
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+3. **Install Dependencies**
+   ```sh
+   pip install -r requirements.txt
+   ```
+4. **Set Up Environment Variables**
+   - Create a `.env` file in the project directory.
+   - Add your **Google Gemini API key**:
+     ```sh
+     GOOGLE_API_KEY=your_google_gemini_api_key_here
+     ```
+
+## Usage
+### Run the Stock Analysis Bot
+```sh
+streamlit run stock_analysis_bot.py
+```
+
+### Example Commands
+- **Get stock price**: "What is the stock price of AAPL?"
+- **Calculate SMA**: "Calculate 50-day SMA for TSLA"
+- **Plot stock price**: "Show me the stock price graph of MSFT"
+
+## Troubleshooting
+- Ensure your **Google API key** is correctly set in the `.env` file.
+- If dependencies are missing, try running:
+  ```sh
+  pip install --upgrade -r requirements.txt
+  ```
+- Check if **Yahoo Finance API (`yfinance`)** is correctly fetching stock data.
+
+## Author
+-Yashwanth Raj
