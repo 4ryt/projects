@@ -135,16 +135,15 @@ streamlit run stock_analysis_bot.py
 
 ### Example Commands
 - **Get stock price**: "What is the stock price of AAPL?"
-- **Calculate SMA**: "Calculate 50-day SMA for TSLA"
-- **Plot stock price**: "Show me the stock price graph of MSFT"
+- **Calculate SMA**: "Calculate 50-day SMA for TESLA"
+- **Plot stock price**: "Show me the stock price graph of MSFT or Microsoft"
+- "If Indian Stocks type .NS after Stock ticker"
 
 ## Troubleshooting
-- Ensure your **Google API key** is correctly set in the `.env` file.
+- Ensure your **Google API key or Gemini API key** is correctly set in the `.env` file.
 - If dependencies are missing, try running:
   ```sh
   pip install --upgrade -r requirements.txt
   ```
 - Check if **Yahoo Finance API (`yfinance`)** is correctly fetching stock data.
 
-## Author
--Yashwanth Raj
